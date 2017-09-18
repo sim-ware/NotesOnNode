@@ -5,6 +5,4 @@ const os = require('os');
 
 var user = os.userInfo();
 
-console.log(user);
-
-// fs.appendFileSync('greetings.txt', 'Hello, world!');
+fs.appendFileSync('greetings.txt', `Hello ${user.username}!`);
